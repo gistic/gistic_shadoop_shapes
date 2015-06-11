@@ -1,4 +1,4 @@
-package org.gistic.spatialHadoop.NYCTaxiData;
+package org.gistic.spatialHadoop.NYCTripData;
 
 import java.io.DataInput;
 import java.io.DataOutput;

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="spatialHDFSReplicator">
+    <output-path>$PROJECT_DIR$/out/artifacts/spatialHDFSReplicator</output-path>
+    <root id="archive" name="spatialHDFSReplicator.jar">
+      <element id="module-output" name="shadoop_shapes" />
+    </root>
+  </artifact>
+</component>

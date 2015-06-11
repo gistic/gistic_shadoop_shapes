@@ -1,0 +1,47 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="shadoop_shapes:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/shadoop_shapes_jar</output-path>
+    <root id="archive" name="shadoop_shapes.jar">
+      <element id="module-output" name="shadoop_shapes" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/xz-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jts-1.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/kfs-0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/ant-1.6.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/oro-2.0.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/ST4-4.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/avro-1.7.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/core-3.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/pig-0.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/antlr-2.7.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/junit-4.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/xmlenc-0.52.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jets3t-0.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jetty-6.1.26.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/joda-time-2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/json-20090211.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/paranamer-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/commons-el-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jsp-2.1-6.1.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/commons-cli-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/hsqldb-1.8.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/slf4j-api-1.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/antlr-runtime-3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/commons-codec-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/commons-net-1.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jetty-util-6.1.26.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jsp-api-2.1-6.1.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/snappy-java-1.0.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/stringtemplate-3.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/esri-geometry-api-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jasper-runtime-5.5.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/commons-compress-1.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/commons-httpclient-3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jasper-compiler-5.5.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/servlet-api-2.5-6.1.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jackson-core-asl-1.9.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/jackson-mapper-asl-1.8.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dep/servlet-api-2.5-20081211.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
