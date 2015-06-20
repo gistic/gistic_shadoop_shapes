@@ -7,6 +7,8 @@ import java.nio.ByteBuffer;
 
 import org.apache.hadoop.io.Text;
 import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import edu.umn.cs.spatialHadoop.core.Rectangle;
 import edu.umn.cs.spatialHadoop.io.TextSerializerHelper;
@@ -15,16 +17,17 @@ import edu.umn.cs.spatialHadoop.io.TextSerializerHelper;
  * @author ammar
  */
 public class RectangleRecord extends Rectangle {
+  static final Log LOG = LogFactory.getLog(RectangleRecord.class);
   public int nodeId;
   public int tableId;
-  public String tags;
+  public String attributes;
   
   @Override
   public void write(DataOutput out) throws IOException {
     out.writeInt(nodeId);
     out.writeInt(tableId);
     super.write(out);
-    out.writeUTF(tags);
+    out.writeUTF(attributes);
   }
 
   @Override
@@ -32,23 +35,25 @@ public class RectangleRecord extends Rectangle {
 	nodeId = in.readInt();
 	tableId = in.readInt();
     super.readFields(in);
-    tags = in.readUTF();
+    attributes = in.readUTF();
   }
 
   @Override
   public Text toText(Text text) {
-    TextSerializerHelper.serializeInt(nodeId, text, ',');
-    TextSerializerHelper.serializeInt(tableId, text, ',');
-    byte[] data = Base64.encodeBase64(ByteBuffer.allocate(32).putDouble(x1)
-      .putDouble(y1).putDouble(x2).putDouble(y2).array());
-    text.append(data, 0, data.length);
-    text.append(new byte[] {(byte)','}, 0, 1);
-    text.append(tags.getBytes(), 0, tags.getBytes().length);
-    return text;
+//    TextSerializerHelper.serializeInt(nodeId, text, ',');
+//    TextSerializerHelper.serializeInt(tableId, text, ',');
+//    byte[] data = Base64.encodeBase64(ByteBuffer.allocate(32).putDouble(x1)
+//      .putDouble(y1).putDouble(x2).putDouble(y2).array());
+//    text.append(data, 0, data.length);
+//    text.append(new byte[] {(byte)','}, 0, 1);
+//    text.append(tags.getBytes(), 0, tags.getBytes().length);
+      text.append(attributes.getBytes(), 0, attributes.getBytes().length);
+      return text;
   }
 
   @Override
   public void fromText(Text text) {
+	attributes = text.toString();
     nodeId = TextSerializerHelper.consumeInt(text, ',');
     tableId = TextSerializerHelper.consumeInt(text, ',');
     byte[] textData = text.getBytes();
@@ -78,11 +83,11 @@ public class RectangleRecord extends Rectangle {
     index = (index < textData.length) ? index + 1 : index; 
     System.arraycopy(textData, index, textData, 0, text.getLength() - index);
     text.set(textData, 0, text.getLength() - index);
-    tags = new String(text.getBytes());
+//    tags = new String(text.getBytes());
   }
 
   @Override
   public String toString() {
-    return "#" + nodeId + ", " + "#" + tableId + super.toString() + ", " + tags;
+    return attributes;
   }
 }
